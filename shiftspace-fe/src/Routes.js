@@ -10,6 +10,8 @@ import AdminDashboard from "./components/user/AdminDashboard";
 import AddCategory from "./components/admin/AddCategory";
 import AddProduct from "./components/admin/AddProduct";
 import Shop from "./components/core/Shop";
+import Product from "./components/core/Product";
+
 
 const Routes = () => {
     return (
@@ -39,6 +41,7 @@ const Routes = () => {
                     exact
                     component={AddProduct}
                 />
+                <Route path="/product/:productId" exact component={Product} />
             </Switch>
         </BrowserRouter>
     );
