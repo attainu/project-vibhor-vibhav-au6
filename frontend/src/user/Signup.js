@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../core/Layout';
 import { signup } from '../auth';
+import '../styles.scss'
 
 const Signup = () => {
     const [values, setValues] = useState({
@@ -38,7 +39,7 @@ const Signup = () => {
     };
 
     const signUpForm = () => (
-        <form>
+        <form className="form-all">
             <div className="form-group">
                 <input onChange={handleChange('name')} type="text" className="form-control" value={name} placeholder="Name" />
             </div>
